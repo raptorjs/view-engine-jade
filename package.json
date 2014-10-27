@@ -1,0 +1,35 @@
+{
+  "name": "view-engine-jade",
+  "description": "Handlebars view engine",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrick-steele-idem/view-engine-jade.git"
+  },
+  "main": "lib/view-engine-jade.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --ui bdd --reporter spec ./test && node_modules/.bin/jshint lib/"
+  },
+  "keywords": [
+    "view-engine",
+    "jade"
+  ],
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "jade": "^1.7.0",
+    "jshint": "^2.5.5",
+    "mocha": "~1.15.1",
+    "view-engine": "^1"
+  },
+  "author": "Patrick Steele-Idem <pnidem@gmail.com>",
+  "license": "Apache License v2.0",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "write-file-atomic": "^1.1.0"
+  },
+  "browser": {
+    "./lib/loader.js": "./lib/loader-browser.js"
+  },
+  "version": "1.0.2"
+}
