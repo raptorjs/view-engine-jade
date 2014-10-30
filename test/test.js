@@ -9,7 +9,7 @@ var jadeViewEngine = require('../'); // Load this module just to make sure it wo
 var viewEngine = require('view-engine');
 viewEngine.register('jade', jadeViewEngine, {});
 
-describe('view-engine-handlebars' , function() {
+describe('view-engine-jade' , function() {
 
     beforeEach(function(done) {
         for (var k in require.cache) {
