@@ -31,5 +31,5 @@
     "browser": {
         "./lib/loader.js": "./lib/loader-browser.js"
     },
-    "version": "1.0.3"
+    "version": "1.0.4"
 }
